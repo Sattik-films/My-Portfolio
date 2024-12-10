@@ -1,0 +1,35 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* margin: 20px; */
+    position: fixed;
+    width: 100vw;
+    padding: 20px;
+    z-index: 1000;
+    /* background: rgba(0, 0, 0, 0.315); */
+    /* background: #161513; */
+    background: black;
+}
+
+.nav-menu{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    text-align: center;
+    gap: 60px;
+    font-size: 20px;
+}
+
+.nav-connect{
+    padding: 20px 20px;
+    border-radius: 50px;
+    background: linear-gradient(267deg, #da7c25 0.36%, #b923E1 102.6%);
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.nav-connect:hover{
+    /* background: linear-gradient(267deg, #b923E1 0.36%, #da7c25 102.6%); */
+    transform: scale(1.05);
+}

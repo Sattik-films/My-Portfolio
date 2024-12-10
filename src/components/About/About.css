@@ -1,0 +1,130 @@
+.about{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    gap:80px;
+    margin: 80px 170px;
+    padding-top: 50px;
+}
+
+.about-title{
+    position: relative;
+}
+.about-title h1{
+    padding: 0px 30px;
+    font-size: 80px;
+    font-weight: 600;
+}
+
+.about-title::after{
+    content: "";
+    position: absolute;
+    width: 50%;
+    height: 5px;
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    bottom: -10px;
+    left: 50%;
+    transform: translateX(-20%);
+}
+
+.about-section{
+    display: flex;
+    gap: 80px;
+}
+
+.about-left img{
+    /* width: 250px; */
+    height: 500px;
+    object-fit: cover;
+    /* justify-content: center; */
+    /* align-items: center; */
+    /* border-radius: 50%; */
+}
+
+.about-right{
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+}
+
+.about-para{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.about-skills{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.about-skill{
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    transition: 0.3s;
+}
+
+.about-skill:hover{
+    transform: scale(1.05);
+    transition: 0.3s;
+}
+
+.about-skill p{
+    min-width: 150px;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.about-skill hr{
+    outline: none;
+    border: none;
+    /* width: 50%; */
+    height: 6px;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+}
+
+
+
+.about-achievements{
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+    /* flex-direction: column; */
+    margin-bottom: 80px;
+    gap: 20px;
+}
+
+.about-achievement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    transition: .5s;
+}
+
+.about-achievement:hover{
+    transform: scale(1.05);
+    transition: .5s;
+}
+
+.about-achievements h1{
+    font-size: 40px;
+    font-weight: 600;
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.about-achievement p{
+    font-size: 20px;
+    font-weight: 500;
+}

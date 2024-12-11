@@ -4,7 +4,7 @@ import profile2 from '../../assets/profile2.jpg'
 
 function About() {
   return (
-    <div className="about">
+    <div id="about" className="about">
       <div className="about-title">
         <h1>About Me</h1>
       </div>
@@ -29,22 +29,30 @@ function About() {
           <div className="about-skills">
             <div className="about-skill">
               <p>Skill name1</p>
-              <hr style={{ width: "50%" }} />
+              <div className="progress">
+                <hr style={{ width: "50%" }} />
+              </div>
             </div>
 
             <div className="about-skill">
               <p>Skill name2</p>
-              <hr style={{ width: "60%" }} />
+              <div className="progress">
+                <hr style={{ width: "80%" }} />
+              </div>
             </div>
 
             <div className="about-skill">
               <p>Skill name3</p>
-              <hr style={{ width: "70%" }} />
+              <div className="progress">
+                <hr style={{ width: "70%" }} />
+              </div>
             </div>
 
             <div className="about-skill">
               <p>Skill name4</p>
-              <hr style={{ width: "30%" }} />
+              <div className="progress">
+                <hr style={{ width: "30%" }} />
+              </div>
             </div>
           </div>
         </div>

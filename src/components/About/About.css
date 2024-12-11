@@ -90,6 +90,22 @@
     background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
 }
 
+.progress{
+    border: 2px solid white;
+    border-radius: 50px;
+    width: 100%;
+    object-fit: cover;
+    height: 10px;
+}
+
+.progress hr{
+    outline: none;
+    border: none;
+    /* width: 50%; */
+    height: 100%;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #DF8908 10%, #B415FF 100%);
+}
 
 
 .about-achievements{

@@ -2,6 +2,7 @@ import React from "react";
 import { useTypewriter, cursor } from "react-simple-typewriter";
 import "./Hero.css";
 import profilePic from "../../assets/profile.jpg";
+import AnchorLink from "react-anchor-link-smooth-scroll";
 
 function Hero() {
   const [typeEffect] = useTypewriter({
@@ -11,18 +12,24 @@ function Hero() {
     typeSpeed: 100,
   });
   return (
-    <div className="hero">
+    <div id="home" className="hero">
       <img src={profilePic} alt="profile" />
       <h1>
         <span>Im Sattik Choudhury,</span>
-        <br />I am a{" "}
+        <br />
+        I'm a{" "}
         <b>
           <u>{typeEffect}</u>
         </b>
       </h1>
       <p>Photography is the story I fail to put into words.</p>
       <div className="hero-action">
-        <div className="hero-connect">Connect with me</div>
+        <div className="hero-connect">
+          <AnchorLink href="#contact" className="anchor">
+            {/* connect with me */}
+          connect with me
+          </AnchorLink>
+        </div>
         <div className="hero-resume">My Resume</div>
       </div>
     </div>

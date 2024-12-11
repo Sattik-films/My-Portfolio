@@ -56,6 +56,9 @@
     border: 1px solid transparent;
     transition: all 0.5s ease;
 }
+
+
+
 .hero-connect:hover{
     transform: scale(1.02);
     border:1px solid white;
@@ -72,4 +75,10 @@
     transform: scale(1.02);
     background: white;
     color: black;
+}
+
+.anchor{
+    color: white;
+    text-decoration: none;
+    transition: all 0.5s ease;
 }

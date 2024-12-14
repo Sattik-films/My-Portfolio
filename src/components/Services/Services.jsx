@@ -17,7 +17,6 @@ function Services() {
                             <p>{service.description}</p>
                             <div className="services-readmore">
                                 <p>Read More</p>
-                                <p>arrow</p>
                             </div>
                         </div>
                 })

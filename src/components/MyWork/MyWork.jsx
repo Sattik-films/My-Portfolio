@@ -21,7 +21,6 @@ function MyWork() {
       </div>
       <div className="mywork-showmore">
         <p>Show More</p>
-        <p>Arrow</p>
       </div>
     </div>
   );

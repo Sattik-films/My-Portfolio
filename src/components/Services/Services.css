@@ -96,3 +96,42 @@
 .services-format:hover .services-readmore{
     color: #ff00ff;
 }
+
+@media screen and (max-width: 1200px){
+    .services{
+        margin: 20px 70px;
+        gap: 70px;
+    }
+
+    .services-title h1{
+        font-size: 50px;
+        padding: 0px;;
+    }
+
+    .services-container{
+        gap: 20px;
+        grid-template-columns: 1fr;
+    }
+
+    .services-format{
+        padding: 20px;
+        gap: 20px;
+    }
+
+    .services-format h2{
+        font-size: 30px;
+    }
+
+    .services-format h3{
+        font-size: 20px;
+    }
+
+    .services-format p{
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .services-readmore{
+        font-size: 18px;
+    }
+}

@@ -82,3 +82,43 @@
     text-decoration: none;
     transition: all 0.5s ease;
 }
+
+@media screen and (max-width: 768px){
+    .hero{
+        height: 100%;
+        padding: 15px;
+        margin-bottom: 50px;
+    }
+    .hero img{
+        width: 200px;
+        height: 200px;
+        margin-top: 120px;
+    }
+
+    .hero h1{
+        margin-top: 50px;
+        font-size: 40px;
+        width: 90%;
+    }
+
+    .hero p{
+        font-size: 18px;
+        width: 90%;
+    }
+
+    .hero-action{
+        font-size: 20px;
+        gap: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 20px;
+    }
+
+    .hero-connect{
+        padding: 20px 30px;
+    }
+
+    .hero-resume{
+        padding: 20px 50px;
+    }
+}

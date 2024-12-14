@@ -15,7 +15,7 @@ function Hero() {
     <div id="home" className="hero">
       <img src={profilePic} alt="profile" />
       <h1>
-        <span>Im Sattik Choudhury,</span>
+        <span>I'm Sattik Choudhury,</span>
         <br />
         I'm a{" "}
         <b>

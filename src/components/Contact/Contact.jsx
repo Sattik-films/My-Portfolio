@@ -53,7 +53,7 @@ function Contact() {
             </div>
             <div className="contact-detail">
               <h2>Address</h2>
-              <p>Lorem, ipsum dolor.</p>
+              <p>Serampore,Hooghly</p>
             </div>
           </div>
         </div>

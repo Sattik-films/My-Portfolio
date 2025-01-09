@@ -8,9 +8,9 @@
     padding: 20px;
     height: 13vh;
     z-index: 1000;
-    /* background: rgba(0, 0, 0, 0.315); */
+    background: rgba(0, 0, 0, 0.803);
     /* background: #161513; */
-    background: black;
+    /* background: black; */
 }
 
 .nav-menu{
@@ -31,7 +31,6 @@
     transition: all 0.5s ease;
 }
 .nav-connect:hover{
-    /* background: linear-gradient(267deg, #b923E1 0.36%, #da7c25 102.6%); */
     transform: scale(1.05);
 }
 

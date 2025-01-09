@@ -1,11 +1,13 @@
-import React, { useRef, useState } from "react";
+import React, { useContext, useRef, useState } from "react";
 import { RiMenu2Fill } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
 import "./Navbar.css";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import MenuContext from "../../contexts/MenuContext";
 
 function Navbar() {
-  const [menu, setMenu] = useState("home");
+  // const [menu, setMenu] = useState("home");
+  const {menu, setMenu} = useContext(MenuContext);
   const menuref = useRef();
 
   const openMenu = () => {

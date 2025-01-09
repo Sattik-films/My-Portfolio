@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./MyWork.css";
 import myWorkData from "../../assets/myWorkData";
+import MenuContext from "../../contexts/MenuContext";
 
 function MyWork() {
+  const { setMenu } = useContext(MenuContext);
   return (
-    <div id="work" className="mywork">
+    <div id="work" className="mywork" onMouseEnter={() => setMenu("work")}>
       <div className="mywork-title">
         <h1>My Latest Work</h1>
       </div>
@@ -17,7 +19,6 @@ function MyWork() {
             </div>
           );
         })}
-        
       </div>
       <div className="mywork-showmore">
         <p>Show More</p>

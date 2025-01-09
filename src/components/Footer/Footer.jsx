@@ -8,7 +8,6 @@ function Footer() {
     <div className="footer">
       <div className="footer-top">
         <div className="footer-top-left">
-          {/* <img src="" alt="footer-logo" /> */}
           <h3>Sattik.</h3>
           <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate

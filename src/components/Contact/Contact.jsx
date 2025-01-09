@@ -1,11 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import "./Contact.css";
 import { useState } from "react";
+import MenuContext from "../../contexts/MenuContext";
 
 function Contact() {
   const [yourName, setYourName] = useState("");
   const [yourEmail, setYourEmail] = useState("");
   const [yourMessage, setYourMessage] = useState("");
+  const { setMenu } = useContext(MenuContext);
 
   const onSubmit = async (event) => {
     event.preventDefault();
@@ -34,7 +36,13 @@ function Contact() {
   };
 
   return (
-    <div id="contact" className="contact">
+    <div
+      id="contact"
+      className="contact"
+      onMouseEnter={() => {
+        setMenu("contact");
+      }}
+    >
       <div className="contact-title">
         <h1>Get in Touch</h1>
       </div>
@@ -86,7 +94,6 @@ function Contact() {
             />
             <label htmlFor="">Your Email</label>
           </div>
-
 
           <div class="input-container">
             <textarea

@@ -1,10 +1,18 @@
-import React from 'react'
-import './About.css'
-import profile2 from '../../assets/profile2.jpg'
+import React, { useContext } from "react";
+import "./About.css";
+import profile2 from "../../assets/profile2.jpg";
+import MenuContext from "../../contexts/MenuContext";
 
 function About() {
+  const { setMenu } = useContext(MenuContext);
   return (
-    <div id="about" className="about">
+    <div
+      id="about"
+      className="about"
+      onMouseEnter={() => {
+        setMenu("about");
+      }}
+    >
       <div className="about-title">
         <h1>About Me</h1>
       </div>
@@ -75,5 +83,4 @@ function About() {
   );
 }
 
-
-export default About
+export default About;

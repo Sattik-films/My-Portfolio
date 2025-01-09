@@ -1,18 +1,27 @@
-import React from "react";
+import React, { useContext } from "react";
 import { useTypewriter, cursor } from "react-simple-typewriter";
 import "./Hero.css";
 import profilePic from "../../assets/profile.jpg";
 import AnchorLink from "react-anchor-link-smooth-scroll";
+import MenuContext from "../../contexts/MenuContext";
 
 function Hero() {
   const [typeEffect] = useTypewriter({
-    words: ["Photographer", "Director", "Editor"],
+    words: ["Photographer", "Cinematographer", "Editor"],
     loop: true,
     deleteSpeed: 50,
     typeSpeed: 100,
   });
+
+  const { setMenu } = useContext(MenuContext);
   return (
-    <div id="home" className="hero">
+    <div
+      id="home"
+      className="hero"
+      onMouseEnter={() => {
+        setMenu("home");
+      }}
+    >
       <img src={profilePic} alt="profile" />
       <h1>
         <span>I'm Sattik Choudhury,</span>
@@ -26,8 +35,7 @@ function Hero() {
       <div className="hero-action">
         <div className="hero-connect">
           <AnchorLink href="#contact" className="anchor">
-            {/* connect with me */}
-          connect with me
+            Connect with me
           </AnchorLink>
         </div>
         <div className="hero-resume">My Resume</div>

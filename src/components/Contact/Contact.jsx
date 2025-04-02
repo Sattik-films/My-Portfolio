@@ -1,6 +1,4 @@
-import React, { useContext } from "react";
-import "./Contact.css";
-import { useState } from "react";
+import React, { useContext, useState } from "react";
 import MenuContext from "../../contexts/MenuContext";
 
 function Contact() {
@@ -38,76 +36,86 @@ function Contact() {
   return (
     <div
       id="contact"
-      className="contact"
-      onMouseEnter={() => {
-        setMenu("contact");
-      }}
+      className="flex flex-col items-center gap-16 px-8 lg:px-32 py-20"
+      onMouseEnter={() => setMenu("contact")}
     >
-      <div className="contact-title">
-        <h1>Get in Touch</h1>
+      {/* Title */}
+      <div className="relative text-center">
+        <h1 className="text-4xl md:text-6xl font-bold text-white">
+          Get in Touch
+        </h1>
+        <div className="absolute w-1/2 h-[4px] bg-gradient-to-r from-orange-500 to-purple-500 bottom-[-10px] left-1/2 transform -translate-x-1/2"></div>
       </div>
-      <div className="contact-section">
-        <div className="contact-left">
-          <h1>Let's Talk</h1>
-          <p>Feel free to contact</p>
-          <div className="contact-details">
-            <div className="contact-detail">
-              <h2>Email</h2>
+
+      {/* Contact Section */}
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-16 w-full">
+        {/* Left Section */}
+        <div className="flex flex-col gap-6 text-white">
+          <h1 className="text-5xl font-extrabold bg-gradient-to-r from-orange-500 to-purple-500 bg-clip-text text-transparent">
+            Let's Talk
+          </h1>
+          <p className="text-lg leading-7">Feel free to contact</p>
+
+          <div className="space-y-4">
+            <div>
+              <h2 className="text-xl font-semibold">Email</h2>
               <p>xyz@gmail.com</p>
             </div>
-            <div className="contact-detail">
-              <h2>Phone</h2>
+            <div>
+              <h2 className="text-xl font-semibold">Phone</h2>
               <p>+91 9104837584</p>
             </div>
-            <div className="contact-detail">
-              <h2>Address</h2>
-              <p>Serampore,Hooghly</p>
+            <div>
+              <h2 className="text-xl font-semibold">Address</h2>
+              <p>Serampore, Hooghly</p>
             </div>
           </div>
         </div>
 
-        <form onSubmit={onSubmit} action="" className="contact-right">
-          <div class="input-container">
+        {/* Right Section (Form) */}
+        <form onSubmit={onSubmit} className="flex flex-col gap-6 w-full">
+          {/* Input Field with Floating Label */}
+          <div className="relative w-full">
             <input
               type="text"
               name="name"
-              id=""
-              placeholder=" "
               required
               value={yourName}
               onChange={(e) => setYourName(e.target.value)}
-              autoComplete="off"
+              className="peer w-full p-4 border border-white bg-transparent text-white rounded-md focus:outline-none focus:border-purple-500"
+              placeholder="Your Name" // This ensures the label animation works
             />
-            <label htmlFor="">Your Name</label>
           </div>
 
-          <div class="input-container">
+          <div className="relative w-full">
             <input
-              autoComplete="off"
               type="email"
               name="email"
-              id=""
-              placeholder=" "
               required
               value={yourEmail}
               onChange={(e) => setYourEmail(e.target.value)}
+              className="peer w-full p-4 border border-white bg-transparent text-white rounded-md focus:outline-none focus:border-purple-500"
+              placeholder="Your Email"
             />
-            <label htmlFor="">Your Email</label>
           </div>
 
-          <div class="input-container">
+          <div className="relative w-full">
             <textarea
-              autoComplete="off"
               name="message"
-              rows={8}
-              placeholder=" "
+              rows="5"
+              required
               value={yourMessage}
               onChange={(e) => setYourMessage(e.target.value)}
+              className="peer w-full p-4 border border-white bg-transparent text-white rounded-md focus:outline-none focus:border-purple-500"
+              placeholder="Enter Your Message"
             />
-            <label htmlFor="">Enter Your Message</label>
+            
           </div>
 
-          <button className="contact-submit" type="submit">
+          <button
+            type="submit"
+            className="w-fit px-8 py-4 text-lg font-semibold text-white bg-gradient-to-r from-orange-500 to-purple-500 rounded-full cursor-pointer transition-all duration-300 hover:scale-105"
+          >
             Submit Now
           </button>
         </form>

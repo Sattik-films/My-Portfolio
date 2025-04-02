@@ -1,40 +1,53 @@
 import React from "react";
-import "./Footer.css";
 import { CiUser } from "react-icons/ci";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 
 function Footer() {
   return (
-    <div className="footer">
-      <div className="footer-top">
-        <div className="footer-top-left">
-          <h3>Sattik.</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate
-            vel ab incidunt tenetur? Itaque et laborum dolorem, est maxime
-            perspiciatis!
-          </p>
+    <footer className="w-full py-12 px-6 md:px-16 lg:px-32 text-white bg-black ">
+      {/* Top Section */}
+      <div className="flex flex-col md:flex-row justify-between items-center mb-8"></div>
+
+      {/* Divider */}
+      <hr className="my-8 border-gray-700" />
+
+      {/* Bottom Section */}
+      <div className="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
+        <div className="flex items-center space-x-4">
+          <CiUser className="text-2xl" />
+          <p className="font-bold">Sattik</p>
         </div>
-        <div className="footer-top-right">
-          <div className="footer-email-input">
-            <CiUser className="Ciuser" />
-            <input type="email" placeholder="Enter Your Email" />
-          </div>
-          <div className="footer-subscribe">Subscribe</div>
-        </div>
-      </div>
-      <hr />
-      <div className="footer-bottom">
-        <p className="footer-bottom-left">@Sattik. All rights reserved.</p>
-        <div className="footer-bottom-right">
-          <p>Terms of Services</p>
-          <p>Privacy Policy</p>
-          <AnchorLink href="#contact" className="footer-link">
-            <p>Connect With Me</p>
+        <p className="text-center md:text-left">
+          @2025 Sattik. All rights reserved.
+        </p>
+        <div className="flex space-x-6">
+          <AnchorLink
+            href="#home"
+            className="cursor-pointer hover:text-white transition"
+          >
+            Home
+          </AnchorLink>
+          <AnchorLink
+            href="#about"
+            className="cursor-pointer hover:text-white transition"
+          >
+            About
+          </AnchorLink>
+          <AnchorLink
+            href="#projects"
+            className="cursor-pointer hover:text-white transition"
+          >
+            Projects
+          </AnchorLink>
+          <AnchorLink
+            href="#contact"
+            className="cursor-pointer hover:text-white transition"
+          >
+            Connect with me
           </AnchorLink>
         </div>
       </div>
-    </div>
+    </footer>
   );
 }
 

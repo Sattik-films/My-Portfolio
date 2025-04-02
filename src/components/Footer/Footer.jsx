@@ -12,7 +12,7 @@ function Footer() {
       <hr className="my-8 border-gray-700" />
 
       {/* Bottom Section */}
-      <div className="flex flex-col md:flex-row justify-between items-center text-gray-400 text-sm">
+      <div className="flex flex-col md:flex-row justify-between gap-5 items-center text-gray-400 text-sm">
         <div className="flex items-center space-x-4">
           <CiUser className="text-2xl" />
           <p className="font-bold">Sattik</p>

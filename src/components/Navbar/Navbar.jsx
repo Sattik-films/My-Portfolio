@@ -3,6 +3,10 @@ import { RiMenu2Fill } from "react-icons/ri";
 import { IoClose } from "react-icons/io5";
 import AnchorLink from "react-anchor-link-smooth-scroll";
 import MenuContext from "../../contexts/MenuContext";
+import { Facebook, Instagram, Linkedin } from 'lucide-react';
+
+
+
 
 function Navbar() {
   const { menu, setMenu } = useContext(MenuContext);
@@ -75,14 +79,34 @@ function Navbar() {
           </li>
         ))}
       </ul>
-      <div className="hidden md:block px-6 py-3 rounded-full bg-gradient-to-r from-orange-500 to-purple-500 text-lg cursor-pointer transition transform hover:scale-105 text-white">
-        Connect with me
+      <div className="hidden md:flex items-center justify-around gap-5 px-6  cursor-pointer">
+        <a
+          href="#"
+          target="_blank"
+          className="hover:scale-110 transition-all duration-300"
+        >
+          <Linkedin size={24} color="#0088C3" />
+        </a>
+        <a
+          href="#"
+          target="_blank"
+          className="hover:scale-110 transition-all duration-300"
+        >
+          <Instagram size={24} color="#B91497" />
+        </a>
+        <a
+          href="#"
+          target="_blank"
+          className="hover:scale-110 transition-all duration-300"
+        >
+          <Facebook size={24} color="#0866FF" />
+        </a>
       </div>
 
       {/* Mobile Menu */}
       <div
         ref={menuref}
-        className="fixed top-0 right-[-100%] w-4/5 max-w-xs h-screen bg-gray-700 text-white flex flex-col space-y-6 items-start pt-10 px-8 transition-right duration-500 md:hidden"
+        className="fixed top-0 right-[-100%] w-4/5 max-w-xs h-screen bg-gray-700 text-white flex flex-col space-y-6 justify-center items-center transition-right duration-500 md:hidden"
       >
         <IoClose
           onClick={closeMenu}
@@ -101,6 +125,29 @@ function Navbar() {
             {section.charAt(0).toUpperCase() + section.slice(1)}
           </AnchorLink>
         ))}
+        <div className="flex items-center justify-around gap-5 cursor-pointer">
+          <a
+            href="#"
+            target="_blank"
+            className="hover:scale-110 transition-all duration-300"
+          >
+            <Linkedin size={24} color="#0088C3" />
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            className="hover:scale-110 transition-all duration-300"
+          >
+            <Instagram size={24} color="#B91497" />
+          </a>
+          <a
+            href="#"
+            target="_blank"
+            className="hover:scale-110 transition-all duration-300"
+          >
+            <Facebook size={24} color="#0866FF" />
+          </a>
+        </div>
       </div>
     </div>
   );

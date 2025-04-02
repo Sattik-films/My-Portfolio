@@ -6,7 +6,6 @@ import AnchorLink from "react-anchor-link-smooth-scroll";
 import MenuContext from "../../contexts/MenuContext";
 
 function Navbar() {
-  // const [menu, setMenu] = useState("home");
   const {menu, setMenu} = useContext(MenuContext);
   const menuref = useRef();
 

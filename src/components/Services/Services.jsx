@@ -31,9 +31,7 @@ function Services() {
               {service.title}
             </h2>
             <p className="text-lg text-gray-300">{service.description}</p>
-            <div className="flex items-center text-lg font-semibold text-white hover:text-purple-500 cursor-pointer transition-all">
-              <p>Read More</p>
-            </div>
+            
           </div>
         ))}
       </div>

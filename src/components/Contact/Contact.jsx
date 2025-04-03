@@ -59,7 +59,7 @@ function Contact() {
           <div className="space-y-4">
             <div>
               <h2 className="text-xl font-semibold">Email</h2>
-              <p>xyz@gmail.com</p>
+              <p>sattik@gmail.com</p>
             </div>
             <div>
               <h2 className="text-xl font-semibold">Phone</h2>
@@ -83,7 +83,7 @@ function Contact() {
               value={yourName}
               onChange={(e) => setYourName(e.target.value)}
               className="peer w-full p-4 border border-white bg-transparent text-white rounded-md focus:outline-none focus:border-purple-500"
-              placeholder="Your Name" // This ensures the label animation works
+              placeholder="Your Name"
             />
           </div>
 

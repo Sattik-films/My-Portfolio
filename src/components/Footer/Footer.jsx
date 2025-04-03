@@ -34,10 +34,10 @@ function Footer() {
             About
           </AnchorLink>
           <AnchorLink
-            href="#projects"
+            href="#work"
             className="cursor-pointer hover:text-white transition"
           >
-            Projects
+            Works
           </AnchorLink>
           <AnchorLink
             href="#contact"

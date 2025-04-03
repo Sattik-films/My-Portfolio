@@ -6,11 +6,13 @@ import Hero from './components/Hero/Hero';
 import MyWork from './components/MyWork/MyWork';
 import Navbar from './components/Navbar/Navbar';
 import Services from './components/Services/Services';
+import Top from './components/Top';
 import './index.css'
 
 function App() {
   return (
     <>
+      <Top />
       <Navbar />
       <Hero />
       <About />

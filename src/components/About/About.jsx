@@ -39,7 +39,7 @@ function About() {
         </div>
       </div>
 
-      <div className="flex flex-col gap-6 md:w-3/4">
+      <div className="flex flex-col gap-6 w-full md:w-2/3">
         {[
           { name: "Skill name1", width: "w-1/2" },
           { name: "Skill name2", width: "w-4/5" },
@@ -60,17 +60,17 @@ function About() {
         ))}
       </div>
 
-      <div className="flex flex-wrap justify-center gap-10 text-center">
+      <div className="flex flex-wrap justify-around w-full gap-10 text-center">
         {[
-          { number: "10+", label: "YEARS OF EXPERIENCE" },
+          { number: "3+", label: "YEARS OF EXPERIENCE" },
           { number: "70+", label: "PROJECTS COMPLETED" },
-          { number: "90+", label: "HAPPY CLIENTS" },
+          { number: "50+", label: "HAPPY CLIENTS" },
         ].map((achievement, index) => (
           <div
             key={index}
-            className="flex flex-col items-center gap-2 transition-transform hover:scale-105"
+            className="flex flex-col items-center justify-around gap-2 transition-transform hover:scale-105"
           >
-            <h1 className="text-4xl font-bold bg-gradient-to-r from-orange-500 to-purple-500 bg-clip-text text-transparent">
+            <h1 className="text-6xl md:text-8xl font-bold bg-gradient-to-r from-orange-500 to-purple-500 bg-clip-text text-transparent">
               {achievement.number}
             </h1>
             <p className="text-lg font-medium">{achievement.label}</p>

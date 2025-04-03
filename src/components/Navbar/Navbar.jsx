@@ -106,7 +106,7 @@ function Navbar() {
       {/* Mobile Menu */}
       <div
         ref={menuref}
-        className="fixed top-0 right-[-100%] w-4/5 max-w-xs h-screen bg-gray-700 text-white flex flex-col space-y-6 justify-center items-center transition-right duration-500 md:hidden"
+        className="fixed top-0 right-[-100%] w-4/5 max-w-xs h-screen bg-gray-900/90 text-white border-l flex flex-col space-y-6 justify-center items-center transition-right duration-500 md:hidden"
       >
         <IoClose
           onClick={closeMenu}

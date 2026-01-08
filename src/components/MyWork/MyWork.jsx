@@ -1,16 +1,8 @@
 import React, { useContext } from "react";
 import myWorkData from "../../assets/myWorkData";
 import MenuContext from "../../contexts/MenuContext";
+import brands from "../../assets/brands";
 
-import frame1 from "../../assets/frame1.png";
-import frame2 from "../../assets/frame2.png";
-import frame3 from "../../assets/frame3.png";
-import frame4 from "../../assets/frame4.png";
-import frame5 from "../../assets/frame5.png";
-import frame6 from "../../assets/frame6.png";
-import frame7 from "../../assets/frame7.png";
-
-const marqueeImages = [frame1, frame2, frame3, frame4, frame5, frame6, frame7];
 
 function MyWork() {
   const { setMenu } = useContext(MenuContext);
@@ -22,43 +14,43 @@ function MyWork() {
       onMouseEnter={() => setMenu("work")}
     >
 
-      <div className="relative text-center">
+     <div className="relative text-center">
         <h1 className="text-4xl md:text-6xl font-bold text-white">
-          Brands
+          Worked With
         </h1>
-        <div className="absolute w-1/2 h-[4px] bg-gradient-to-r from-orange-500 to-purple-500 bottom-[-10px] left-1/2 transform -translate-x-1/2"></div>
+        <div className="absolute w-1/2 h-[4px] bg-gradient-to-r from-orange-500 to-purple-500 bottom-[-10px] left-1/2 -translate-x-1/2" />
       </div>
 
       <div className="relative w-full overflow-hidden py-16">
-        {/* Fade edges */}
         <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-black to-transparent z-10" />
         <div className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-black to-transparent z-10" />
 
-        <div className="flex gap-10 animate-marquee whitespace-nowrap w-full hover:[animation-play-state:paused]">
-          {[...marqueeImages, ...marqueeImages].map((img, index) => (
+        <div className="flex gap-0 md:gap-10 animate-marquee whitespace-nowrap w-full hover:[animation-play-state:paused]">
+          {[...brands, ...brands].map((brand, index) => (
             <div
               key={index}
               className="
-          min-w-[320px] md:min-w-[520px]
-          aspect-[16/9]
-          rounded-2xl
-          overflow-hidden
-          bg-white/5
-          backdrop-blur-md
-          border border-white/10
-          shadow-lg
-          flex items-center justify-center
-        "
+                min-w-[320px] md:min-w-[520px]
+                aspect-[4/3]
+                w-fit
+                rounded-2xl
+                overflow-hidden
+                bg-black
+                backdrop-blur-md
+                
+                shadow-lg
+                flex items-center justify-center
+              "
             >
               <img
-                src={img}
-                alt="marquee"
+                src={brand.logo}
+                alt={brand.name}
                 className="
-            w-full h-full
-            object-contain
-            transition-transform duration-500
-            hover:scale-[1.02]
-          "
+                  w-full h-full
+                  object-contain
+                  transition-transform duration-500
+                  hover:scale-[1.05]
+                "
               />
             </div>
           ))}

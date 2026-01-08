@@ -61,7 +61,7 @@ function Contact() {
               className="cursor-pointer hover:text-blue-400 transition"
               onClick={() =>
                 (window.location.href =
-                  "mailto:connectsattik@gmail.com?subject=Website%20Inquiry")
+                  "mailto:connectsattik@gmail.com?subject=Inquiry")
               }
             >
               <h2 className="text-xl font-semibold">Email</h2>

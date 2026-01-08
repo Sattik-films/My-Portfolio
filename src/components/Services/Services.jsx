@@ -25,9 +25,9 @@ function Services() {
         {Services_Data.map((service, index) => (
           <div
             key={index}
-            className="flex flex-col gap-5 p-6 border-2 border-white rounded-lg transition-all duration-500 hover:scale-105 hover:shadow-lg hover:border-purple-500 bg-black/70"
+            className="flex flex-col gap-5 p-6 border-2 border-white rounded-[35px] transition-all duration-500 hover:scale-105 hover:shadow-lg hover:border-purple-500 bg-black/70"
           >
-            <h3 className="text-2xl font-semibold text-white">{service.id}</h3>
+            {/* <h3 className="text-2xl font-semibold text-white">{service.id}</h3> */}
             <h2 className="text-3xl font-bold bg-gradient-to-r from-orange-500 to-purple-500 bg-clip-text text-transparent">
               {service.title}
             </h2>

@@ -18,7 +18,7 @@ function Footer() {
           <p className="font-bold">Sattik</p>
         </div>
         <p className="text-center md:text-left">
-          @2025 Sattik. All rights reserved.
+          @{new Date().getFullYear()} Sattik. All rights reserved.
         </p>
         <div className="flex space-x-6">
           <AnchorLink

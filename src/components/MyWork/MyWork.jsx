@@ -21,7 +21,7 @@ function MyWork() {
         <div className="absolute w-1/2 h-[4px] bg-gradient-to-r from-orange-500 to-purple-500 bottom-[-10px] left-1/2 -translate-x-1/2" />
       </div>
 
-      <div className="relative w-full overflow-hidden py-16">
+      <div className="relative w-full mt-[-50px] overflow-hidden py-16">
         <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-black to-transparent z-10" />
         <div className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-black to-transparent z-10" />
 

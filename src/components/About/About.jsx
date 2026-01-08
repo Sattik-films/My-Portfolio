@@ -51,7 +51,6 @@ function About() {
         </div>
       </div>
 
-
       <div className="flex flex-wrap justify-around w-full gap-10 text-center">
         {[
           { number: "5+", label: "YEARS OF EXPERIENCE" },
@@ -71,15 +70,15 @@ function About() {
       </div>
 
       <div className="relative w-full overflow-hidden py-16">
-  {/* Fade edges */}
-  <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-black to-transparent z-10" />
-  <div className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-black to-transparent z-10" />
+        {/* Fade edges */}
+        <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-black to-transparent z-10" />
+        <div className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-black to-transparent z-10" />
 
-  <div className="flex gap-10 animate-marquee whitespace-nowrap w-full hover:[animation-play-state:paused]">
-    {[...marqueeImages, ...marqueeImages].map((img, index) => (
-      <div
-        key={index}
-        className="
+        <div className="flex gap-10 animate-marquee whitespace-nowrap w-full hover:[animation-play-state:paused]">
+          {[...marqueeImages, ...marqueeImages].map((img, index) => (
+            <div
+              key={index}
+              className="
           min-w-[320px] md:min-w-[520px]
           aspect-[16/9]
           rounded-2xl
@@ -90,22 +89,21 @@ function About() {
           shadow-lg
           flex items-center justify-center
         "
-      >
-        <img
-          src={img}
-          alt="marquee"
-          className="
+            >
+              <img
+                src={img}
+                alt="marquee"
+                className="
             w-full h-full
             object-contain
             transition-transform duration-500
             hover:scale-[1.02]
           "
-        />
+              />
+            </div>
+          ))}
+        </div>
       </div>
-    ))}
-  </div>
-</div>
-
     </div>
   );
 }

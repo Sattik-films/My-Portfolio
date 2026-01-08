@@ -43,9 +43,9 @@ function Hero() {
             Connect with me
           </AnchorLink>
         </div>
-        <div className="px-10 py-4 rounded-full border border-orange-500 cursor-pointer transition-transform transform hover:scale-105 hover:bg-white hover:text-black">
+        {/* <div className="px-10 py-4 rounded-full border border-orange-500 cursor-pointer transition-transform transform hover:scale-105 hover:bg-white hover:text-black">
           My Resume
-        </div>
+        </div> */}
       </div>
     </div>
   );

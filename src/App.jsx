@@ -8,7 +8,7 @@ import MyWork from './components/MyWork/MyWork';
 import Navbar from './components/Navbar/Navbar';
 import Services from './components/Services/Services';
 import Top from './components/Top';
-import Whatsapp from './components/whatsapp';
+import Whatsapp from './components/Whatsapp';
 import './index.css'
 
 function App() {

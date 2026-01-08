@@ -23,8 +23,8 @@ function MyWork() {
       </div>
 
       <div className="relative w-full mt-[-50px] overflow-hidden py-16">
-        <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-black to-transparent z-10" />
-        <div className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-black to-transparent z-10" />
+        {/* <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-black to-transparent z-10" />
+        <div className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-black to-transparent z-10" /> */}
 
         <div className="flex gap-0 md:gap-10 animate-marquee whitespace-nowrap w-full hover:[animation-play-state:paused]">
           {[...brands, ...brands].map((brand, index) => (
@@ -36,8 +36,7 @@ function MyWork() {
                 w-fit
                 rounded-2xl
                 overflow-hidden
-                bg-black
-                backdrop-blur-md
+                backdrop-blur-sm
                 
                 shadow-lg
                 flex items-center justify-center

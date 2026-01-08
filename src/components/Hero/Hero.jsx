@@ -6,7 +6,7 @@ import MenuContext from "../../contexts/MenuContext";
 
 function Hero() {
   const [typeEffect] = useTypewriter({
-    words: ["Content Creator","Film Maker","Cinematographer", "Editor", "Colorist"," Voice Actor"],
+    words: ["Content Creator","Film Maker","Cinemato grapher", "Editor", "Colorist"," Voice Actor"],
     loop: true,
     deleteSpeed: 50,
     typeSpeed: 100,
@@ -35,7 +35,7 @@ function Hero() {
         </b>
       </h1>
       <p className="text-center text-lg sm:text-xl w-2/3 font-light leading-relaxed">
-        Photography is the story I fail to put into words.
+        Stories, told between cuts.
       </p>
       <div className="flex flex-col sm:flex-row items-center gap-5 text-lg font-medium mb-12">
         <div className="px-8 py-4 rounded-full bg-gradient-to-r from-orange-500 to-purple-500 text-white cursor-pointer border border-transparent transition-transform transform hover:scale-105">

@@ -58,7 +58,7 @@ function Navbar() {
   return (
     <div className="fixed w-full flex justify-between items-center p-5 h-[10vh] bg-black/80 z-50">
       {/* <h2 className="text-white text-2xl font-semibold italic">Sattik.</h2> */}
-      <img src={logo} alt="Logo" className="w-32 h-32 object-contain" />
+      <img src={logo} alt="Logo" className="w-24 h-24 md:w-32 md:h-32 object-contain" />
       <RiMenu2Fill
         onClick={openMenu}
         className="md:hidden text-white text-3xl cursor-pointer"
@@ -107,7 +107,7 @@ function Navbar() {
       {/* Mobile Menu */}
       <div
         ref={menuref}
-        className="fixed top-0 right-[-100%] w-4/5 max-w-xs h-screen bg-zinc-900/80 text-white flex flex-col space-y-6 justify-center items-center transition-right duration-500 md:hidden"
+        className="fixed top-0 right-[-100%] w-4/5 max-w-xs h-screen bg-zinc-900/80 backdrop-blur-xl text-white flex flex-col space-y-6 justify-center items-center transition-right duration-500 md:hidden"
       >
         <IoClose
           onClick={closeMenu}

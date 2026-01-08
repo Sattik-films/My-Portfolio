@@ -11,6 +11,7 @@ import talpata from "../assets/talpata.png";
 import tasteandbite from "../assets/tasteandbite.png";
 import pwc from "../assets/pwc.png";
 import bj from "../assets/bj.png";
+import HH1 from "../assets/HH_1.png";
 
 const brands = [
   {
@@ -29,9 +30,15 @@ const brands = [
     logo: mohonbagan,
   },
 
+
   {
     name: "Brand 111",
     logo:  bj,
+  },
+  
+  {
+    name: "Brand 2",
+    logo:HH1
   },
   
   {

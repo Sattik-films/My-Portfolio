@@ -4,7 +4,7 @@ export default {
   theme: {
     extend: {
       animation: {
-        marquee: "marquee 40s linear infinite",
+        marquee: "marquee 30s linear infinite",
       },
       keyframes: {
         marquee: {

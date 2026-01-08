@@ -8,8 +8,11 @@ import frame4 from "../../assets/frame4.png";
 import frame5 from "../../assets/frame5.png";
 import frame6 from "../../assets/frame6.png";
 import frame7 from "../../assets/frame7.png";
+import frame8 from "../../assets/frame8.png";
+import frame9 from "../../assets/frame9.png";
+import frame10 from "../../assets/frame10.png";
 
-const marqueeImages = [frame1, frame2, frame3, frame4, frame5, frame6, frame7];
+const marqueeImages = [frame1,frame8, frame2, frame4, frame5, frame6, frame7, frame9, frame10, frame3];
 
 function About() {
   const { setMenu } = useContext(MenuContext);
@@ -71,8 +74,8 @@ function About() {
 
       <div className="relative w-full overflow-hidden py-16">
         {/* Fade edges */}
-        <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-black to-transparent z-10" />
-        <div className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-black to-transparent z-10" />
+        {/* <div className="pointer-events-none absolute left-0 top-0 h-full w-24 bg-gradient-to-r from-black to-transparent z-10" /> */}
+        {/* <div className="pointer-events-none absolute right-0 top-0 h-full w-24 bg-gradient-to-l from-black to-transparent z-10" /> */}
 
         <div className="flex gap-10 animate-marquee whitespace-nowrap w-full hover:[animation-play-state:paused]">
           {[...marqueeImages, ...marqueeImages].map((img, index) => (

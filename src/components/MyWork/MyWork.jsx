@@ -1,5 +1,6 @@
 import React, { useContext } from "react";
 import myWorkData from "../../assets/myWorkData";
+import { projects } from "../../assets/projects/projects"
 import MenuContext from "../../contexts/MenuContext";
 import brands from "../../assets/brands";
 
@@ -68,13 +69,14 @@ function MyWork() {
 
       {/* Work Container */}
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10 w-full">
-        {myWorkData.map((work, index) => (
+        {projects.map((work, index) => (
           <div
-            key={index}
+            key={work.id}
             className="flex flex-col items-center gap-4 transition-all duration-500 hover:scale-105 hover:shadow-lg"
+            onClick={() => window.open(work.link, "_blank")}
           >
             <img
-              src={work.pic}
+              src={work.image}
               alt={work.title}
               className="w-full h-64 object-cover rounded-lg transition-all duration-500 cursor-pointer border-4 border-transparent hover:border-purple-500"
             />
@@ -84,9 +86,9 @@ function MyWork() {
       </div>
 
       {/* Show More Button */}
-      <div className="px-8 py-4 text-lg font-semibold text-white border-2 border-white rounded-full cursor-pointer transition-all duration-300 hover:bg-white hover:text-black hover:scale-105">
+      {/* <div className="px-8 py-4 text-lg font-semibold text-white border-2 border-white rounded-full cursor-pointer transition-all duration-300 hover:bg-white hover:text-black hover:scale-105">
         Show More
-      </div>
+      </div> */}
     </div>
   );
 }

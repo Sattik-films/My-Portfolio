@@ -81,21 +81,21 @@ function Navbar() {
       </ul>
       <div className="hidden md:flex items-center justify-around gap-5 px-6  cursor-pointer">
         <a
-          href="#"
+          href="https://www.linkedin.com/in/sattik-choudhury-89345b2ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
           target="_blank"
           className="hover:scale-110 transition-all duration-300"
         >
           <Linkedin size={24} color="#0088C3" />
         </a>
         <a
-          href="#"
+          href="https://www.instagram.com/sattik007mkv?igsh=MW84OTNvdDYxb3A4Mg%3D%3D&utm_source=qr"
           target="_blank"
           className="hover:scale-110 transition-all duration-300"
         >
           <Instagram size={24} color="#B91497" />
         </a>
         <a
-          href="#"
+          href="https://www.facebook.com/share/1T9NA5o5io/?mibextid=wwXIfr"
           target="_blank"
           className="hover:scale-110 transition-all duration-300"
         >
@@ -127,21 +127,21 @@ function Navbar() {
         ))}
         <div className="flex items-center justify-around gap-5 cursor-pointer">
           <a
-            href="#"
+            href="https://www.linkedin.com/in/sattik-choudhury-89345b2ab?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app"
             target="_blank"
             className="hover:scale-110 transition-all duration-300"
           >
             <Linkedin size={24} color="#0088C3" />
           </a>
           <a
-            href="#"
+            href="https://www.instagram.com/sattik007mkv?igsh=MW84OTNvdDYxb3A4Mg%3D%3D&utm_source=qr"
             target="_blank"
             className="hover:scale-110 transition-all duration-300"
           >
             <Instagram size={24} color="#B91497" />
           </a>
           <a
-            href="#"
+            href="https://www.facebook.com/share/1T9NA5o5io/?mibextid=wwXIfr"
             target="_blank"
             className="hover:scale-110 transition-all duration-300"
           >

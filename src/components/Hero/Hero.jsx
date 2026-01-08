@@ -6,7 +6,7 @@ import MenuContext from "../../contexts/MenuContext";
 
 function Hero() {
   const [typeEffect] = useTypewriter({
-    words: ["Photographer", "Cinematographer", "Editor"],
+    words: ["Content Creator","Film Maker","Cinematographer", "Editor", "Colorist"," Voice Actor"],
     loop: true,
     deleteSpeed: 50,
     typeSpeed: 100,
@@ -28,10 +28,10 @@ function Hero() {
       <h1 className="text-center text-4xl sm:text-5xl font-semibold w-2/3">
         <span className="bg-gradient-to-r from-orange-500 to-purple-500 bg-clip-text text-transparent">
           I'm Sattik Choudhury,
-        </span>
-        <br /> I'm a{" "}
+        </span>{" "}
+        <br />
         <b>
-          <u>{typeEffect}</u>
+          {typeEffect}
         </b>
       </h1>
       <p className="text-center text-lg sm:text-xl w-2/3 font-light leading-relaxed">

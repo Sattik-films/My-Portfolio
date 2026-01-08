@@ -58,7 +58,7 @@ function Navbar() {
   return (
     <div className="fixed w-full flex justify-between items-center p-5 h-[10vh] bg-black/80 z-50">
       {/* <h2 className="text-white text-2xl font-semibold italic">Sattik.</h2> */}
-      <img src={logo} alt="Logo" className="w-24 h-24 md:w-32 md:h-32 object-contain" />
+      <img src={logo} alt="Logo" className="w-16 h-16 object-contain" />
       <RiMenu2Fill
         onClick={openMenu}
         className="md:hidden text-white text-3xl cursor-pointer"

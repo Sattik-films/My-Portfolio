@@ -57,17 +57,28 @@ function Contact() {
           <p className="text-lg leading-7">Feel free to contact</p>
 
           <div className="space-y-4">
-            <div>
+            <div
+              className="cursor-pointer hover:text-blue-400 transition"
+              onClick={() =>
+                (window.location.href =
+                  "mailto:connectsattik@gmail.com?subject=Website%20Inquiry")
+              }
+            >
               <h2 className="text-xl font-semibold">Email</h2>
-              <p>sattik@gmail.com</p>
+              <p>connectsattik@gmail.com</p>
             </div>
-            <div>
+
+            <div
+              className="cursor-pointer hover:text-green-400 transition"
+              onClick={() => (window.location.href = "tel:+918697114527")}
+            >
               <h2 className="text-xl font-semibold">Phone</h2>
-              <p>+91 9104837584</p>
+              <p>+91 8697114527</p>
             </div>
+
             <div>
               <h2 className="text-xl font-semibold">Address</h2>
-              <p>Serampore, Hooghly</p>
+              <p>Kolkata</p>
             </div>
           </div>
         </div>
@@ -109,7 +120,6 @@ function Contact() {
               className="peer w-full p-4 border border-white bg-transparent text-white rounded-md focus:outline-none focus:border-purple-500"
               placeholder="Enter Your Message"
             />
-            
           </div>
 
           <button
